@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js	"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="assets/css/category-header.css">
+    <link rel="stylesheet" href="assets/css/xzoom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
+    <script src="assets/js/thumbnail-zoom.js"></script>
+    <link rel="stylesheet" href="assets/css/slick-slide.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
+
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Starts -->
+    <nav class="navbar fixed-top navbar-expand-md">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class=" offset-md-2 col-md-7">
+                <div class="input-group">
+                    <input type="text" class="form-control search-box" placeholder="Search Your Item Here...">
+                    <div class="input-group-append">
+                        <span style="background: #E0B589;" class="input-group-text" id="basic-addon1"><i
+                                class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link login-btn btn-sm" href="{{ url('/login') }}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link register-btn btn-sm" href="{{ url('/register') }}">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/register') }}"><i class="fa fa-shopping-cart"></i> Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar Ends -->
+    <!-- Category Header Start -->
+    <header class="fixed-top" style="margin-top: 50px;">
+        <!-- Navigate your way around the fiverr categories and marketplace subcategories directly from this navbar. -->
+        <div class="mp-box mp-box-white notop mp-cat-list-curated js-cat-list-curated">
+            <div class="box-row">
+                <ul class="main-cat-list js-main-cat-list cf active">
+                    <li class=" ">
+                        <a href="" data-gtm-action="homepage-dropdown-click" data-gtm-event="Category Navigation"
+                            data-gtm-label="foodgrains-oil-masala" data-title="Foodgrains Oil &amp; Masala">Foodgrains,
+                            Oil &amp; Masala</a>
+                        <div class="unnecessary-firefox-wrapper">
+                            <div class="menu-cont">
+                                <ul>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="atta-floor-sooji-" data-title="Atta Floor &amp; Sooji">Atta,
+                                            Flour &amp; Sooji</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="dals-pulses" data-title="Dals &amp; Pulses">Dals &amp;
+                                            Pulses</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="rice-rice-products"
+                                            data-title="Rice &amp; Rice Products">Rice &amp; Rice Products</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="organic-staples" data-title="Organic Staples">Organic
+                                            Staples</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="salt-sugar-jaggery"
+                                            data-title="Salt Sugar &amp; Jaggery">Salt Sugar &amp; Jaggery</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="edible-oils-ghee" data-title="Edible Oils &amp; Ghee">Edible
+                                            Oils &amp; Ghee</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="masala-spices" data-title="Masala's &amp; Spices">Masala's &
+                                            Spices</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="dry-fruits" data-title="Dry Fruits">Dry Fruits</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class=" ">
+                        <a href="" data-gtm-action="homepage-dropdown-click" data-gtm-event="Category Navigation"
+                            data-gtm-label="bakery-cakes-dairy" data-title="Bakery Cakes &amp; Dairy">Bakery, Cakes
+                            &amp; Dairy</a>
+                        <div class="unnecessary-firefox-wrapper">
+                            <div class="menu-cont">
+                                <ul>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="resumes-cover-letter-services"
+                                            data-title="Resumes &amp; Cover Letters">Resumes &amp; Cover Letters</a>
+                                    </li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="proofreading-editing"
+                                            data-title="Proofreading &amp; Editing">Proofreading &amp; Editing</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="quality-translation-services"
+                                            data-title="Translation">Translation</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="creative-writing" data-title="Creative Writing">Creative
+                                            Writing</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="business-copywriting"
+                                            data-title="Business Copywriting">Business Copywriting</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="research-summaries"
+                                            data-title="Research &amp; Summaries">Research &amp; Summaries</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class=" ">
+                        <a href="" data-gtm-action="homepage-dropdown-click" data-gtm-event="Category Navigation"
+                            data-gtm-label="video-animation" data-title="Video &amp; Animation">Beverages</a>
+                        <div class="unnecessary-firefox-wrapper">
+                            <div class="menu-cont">
+                                <ul>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="whiteboard-explainer-videos"
+                                            data-title="Whiteboard &amp; Explainer Videos">Whiteboard &amp; Explainer
+                                            Videos</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="custom-video-intros"
+                                            data-title="Intros &amp; Animated Logos">Intros &amp; Animated Logos</a>
+                                    </li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="promotional-brand-videos"
+                                            data-title="Promotional &amp; Brand Videos">Promotional &amp; Brand
+                                            Videos</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="video-post-production-editing"
+                                            data-title="Editing &amp; Post Production">Editing &amp; Post Production</a>
+                                    </li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="lyric-music-videos"
+                                            data-title="Lyric &amp; Music Videos">Lyric &amp; Music Videos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class=" ">
+                        <a href="" data-gtm-action="homepage-dropdown-click" data-gtm-event="Category Navigation"
+                            data-gtm-label="music-audio" data-title="Music &amp; Audio">Snacks &amp; Branded Foods</a>
+                        <div class="unnecessary-firefox-wrapper">
+                            <div class="menu-cont">
+                                <ul>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="voice-overs" data-title="Voice Over">Voice Over</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="mixing-mastering" data-title="Mixing &amp; Mastering">Mixing
+                                            &amp; Mastering</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="producers-composers"
+                                            data-title="Producers &amp; Composers">Producers &amp; Composers</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="singers-songwriters"
+                                            data-title="Singers &amp; Songwriters">Singers &amp; Songwriters</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="session-musicians" data-title="Session Musicians">Session
+                                            Musicians</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class=" ">
+                        <a href="" data-gtm-action="homepage-dropdown-click" data-gtm-event="Category Navigation"
+                            data-gtm-label="programming-tech" data-title="Programming &amp; Tech">Beauty &amp;
+                            Hygiene</a>
+                        <div class="unnecessary-firefox-wrapper">
+                            <div class="menu-cont">
+                                <ul>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="wordpress-services" data-title="WordPress">WordPress</a>
+                                    </li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="web-cms-services"
+                                            data-title="Website Builders &amp; CMS">Website Builders &amp; CMS</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="web-programming-services" data-title="Web Programming">Web
+                                            Programming</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="ecommerce-services" data-title="Ecommerce">Ecommerce</a>
+                                    </li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="mobile-app-services"
+                                            data-title="Mobile Apps &amp; Web">Mobile Apps &amp; Web</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="desktop-app-services"
+                                            data-title="Desktop applications">Desktop applications</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="support-it-services" data-title="Support &amp; IT">Support
+                                            &amp; IT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="align-right ">
+                        <a href="" data-gtm-action="homepage-dropdown-click" data-gtm-event="Category Navigation"
+                            data-gtm-label="advertising" data-title="Advertising">Cleaning &amp; Household</a>
+                        <div class="unnecessary-firefox-wrapper">
+                            <div class="menu-cont">
+                                <ul>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="music-promotions" data-title="Music Promotion">Music
+                                            Promotion</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="radio-commercials" data-title="Radio">Radio</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="banner-advertising" data-title="Banner Advertising">Banner
+                                            Advertising</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="out-of-home-advertising"
+                                            data-title="Outdoor Advertising">Outdoor Advertising</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="handing-out-flyers"
+                                            data-title="Flyers &amp; Handouts">Flyers &amp; Handouts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="align-right  cat-wide">
+                        <a href="" data-gtm-action="homepage-dropdown-click" data-gtm-event="Category Navigation"
+                            data-gtm-label="business" data-title="Business">Gourmet &amp; World Foods</a>
+                        <div class="unnecessary-firefox-wrapper">
+                            <div class="menu-cont">
+                                <ul>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="virtual-assistant-services"
+                                            data-title="Virtual Assistant"></a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="market-research-reports" data-title="Market Research">Market
+                                            Research</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="business-plans" data-title="Business Plans">Business
+                                            Plans</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="branding-services" data-title="Branding Services">Branding
+                                            Services</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="legal-consulting-services"
+                                            data-title="Legal Consulting">Legal Consulting</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="financial-consulting-services"
+                                            data-title="Financial Consulting">Financial Consulting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="align-right  cat-wide">
+                        <a href="" data-gtm-action="homepage-dropdown-click" data-gtm-event="Category Navigation"
+                            data-gtm-label="lifestyle" data-title="Lifestyle">Baby Care</a>
+                        <div class="unnecessary-firefox-wrapper">
+                            <div class="menu-cont">
+                                <ul>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="animal-care-pet-grooming"
+                                            data-title="Animal Care &amp; Pets">Animal Care &amp; Pets</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="relationship-advice-for-men-woman"
+                                            data-title="Relationship Advice">Relationship Advice</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="fitness-nutrition-weight-loss"
+                                            data-title="Diet &amp; Weight Loss">Diet &amp; Weight Loss</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="health-fitness-tips"
+                                            data-title="Health &amp; Fitness">Health &amp; Fitness</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="makeup-styling-beauty-tips"
+                                            data-title="Makeup, Styling &amp; Beauty">Makeup, Styling &amp; Beauty</a>
+                                    </li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="online-private-lessons"
+                                            data-title="Online Private Lessons">Online Private Lessons</a></li>
+                                    <li><a href="" data-gtm-action="" data-gtm-event="Category Navigation"
+                                            data-gtm-label="astrology-fortune-telling-reading"
+                                            data-title="Astrology &amp; Fortune Telling">Astrology &amp; Fortune
+                                            Telling</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="align-right cat-nosubcategory cat-wide">
+                        <a href="" data-gtm-action="homepage-dropdown-click" data-gtm-event="Category Navigation"
+                            data-gtm-label="other" data-title="Other">Other</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Category Header Ends -->
+
+    <div class="row" style="margin-top: 78px;">
+        <div class="container">
+            <div class="row mt-2">
+                <img src="assets/images/cart-banner.gif" alt="" class="img-responsive">
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-9 mb-4">
+                    <strong>Review your order</strong>
+                    <p class="small-font">By placing your order, you agree to Amazon's privacy notice and conditions of use.</p>
+                    <div class="shadow round border">
+                        <fa class="ml-2 fa fa-info-circle"></fa>
+                        <span class="normal-font text-secondary">Important message</span>
+                        <form class="ml-3">
+                            <input type="checkbox" class="styled styled-success" id="default" name="default-address" value="default">
+                            <label for="default"><small>Check this box to default to these delivery options in the future. </small></label>
+                          </form>
+                    </div>
+
+                    <div class="card shadow mt-3">
+                        <div class="row mt-2 mb-2">
+                            <div class="col-md-4">
+                                <span class="font-weight-bold normal-font ml-1">Shipping Address</span><a href="" class="extra-small-font ml-1">Change Address</a>
+                                <address class="small-font ml-2">
+                                    <p class="mb-1">Adnan Ahmad Siddique</p>
+                                    <p class="mb-1">M-20, 2nd Floor, Abul Fazal Enclave Part</p>
+                                    <p class="mb-1">Jamia Nagar Okhla</p>
+                                    <p class="mb-1">NEW DELHI, DELHI 110025</p>
+                                    <p class="mb-1">India</p>
+                                    <p class="mb-1">Phone: 9319804013</p>
+                                </address>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="font-weight-bold normal-font ml-1">Payment Method</span><a href="" class="extra-small-font ml-1">Change</a>
+                                <p class="small-font">Pay On Delivery(Cash/Card)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="font-weight-bold normal-font ml-1">Coupon code</span>
+                                    <input type="text" style="width: 240px;" placeholder="Enter Code" class="form-control form-control-sm mb-1 mr-2">
+                                    <button class="btn-outline-danger btn-sm float-right ml-2 mr-3">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card round p-2">
+                        <button class="btn-outline-danger btn-sm">Place Your Order</button>
+                        <p class="font-weight-bold normal-font ml-2 mt-2">Order Summary</p>
+                        <div class="row ml-2">
+                            <div class="col">
+                                <span class="small-font">Items:</span>
+                            </div>
+                            <div class="col">
+                                <span class="small-font">480.00</span>
+                            </div>
+                        </div>
+                        <div class="row ml-2">
+                            <div class="col">
+                                <span class="small-font">Delivery:</span>
+                            </div>
+                            <div class="col">
+                                <span class="small-font">0.00</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row ml-2">
+                            <div class="col">
+                                <span class="brown normal-font font-weight-bold">Order Total: </span>
+                            </div>
+                            <div class="col">
+                                <span class="brown normal-font font-weight-bold">480.00 </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row ml-2">
+                            <span class="brown normal-font font-weight-bold">
+                                Your Savings: 105.00(19%)
+                            </span>
+                            <div class="text-left">
+                                <ul>
+                                    <li class="small-font">Item Discount</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+    <footer class="text-white p-4">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>About</h6>
+                            <div><a class="text-white small-font" href="">Contact Us</a></div>
+                            <div><a class="text-white small-font" href="">About Us</a></div>
+                            <div><a class="text-white small-font" href="">Careers</a></div>
+                            <div><a class="text-white small-font" href="">Flipkart Stories</a></div>
+                            <div><a class="text-white small-font" href="">Press</a></div>
+                            <div><a class="text-white small-font" href="">Flipkart Wholesale</a></div>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Connect With Us</h6>
+                            <div><a class="text-white small-font" href="">Facebook</a></div>
+                            <div><a class="text-white small-font" href="">Twitter </a></div>
+                            <div><a class="text-white small-font" href="">Instagram</a></div>
+                            <div><a class="text-white small-font" href="">LinkedIn</a></div>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Make Money With Us</h6>
+                            <div><a class="text-white small-font" href="">Sell On Amazon</a></div>
+                            <div><a class="text-white small-font" href="">Advertise Your Products</a></div>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Connect With Us</h6>
+                            <div><a class="text-white small-font" href="">Facebook</a></div>
+                            <div><a class="text-white small-font" href="">Twitter </a></div>
+                            <div><a class="text-white small-font" href="">Instagram</a></div>
+                            <div><a class="text-white small-font" href="">LinkedIn</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Mail Us:</h6>
+                            <address class="text-white small-font">
+                                Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Clove Embassy Tech
+                                Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka,
+                                India
+                            </address>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Office Address</h6>
+                            <address class="text-white small-font">
+                                Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Clove Embassy Tech
+                                Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka,
+                                India CIN : U51109KA2012PTC066107 Telephone: 1800 202 9898
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div>
+            <div class="row">
+                <div class="col-md-2"><i class="fa fa-briefcase"></i> <span> Sell On Flipkart</span></div>
+                <div class="col-md-2"><i class="fa fa-gift"></i> <span> Advertise</span></div>
+                <div class="col-md-2"><i class="fa fa-gift"></i> <span> Gift Cards</span></div>
+                <div class="col-md-2"><i class="fa fa-info-circle"></i> <span> Help Center</span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/slick-slide.js"></script>
+</body>
+
+</html>

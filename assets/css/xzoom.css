@@ -1,0 +1,30 @@
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .product-page {
+    display: flex;
+  }
+  
+  .img-display {
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  
+  .thumb {
+    opacity: .7;
+    margin: 0 .25rem .25rem 0;
+    width: 70px;
+    transition: opacity .25s ease-out;
+  }
+  
+  .thumb:hover,
+  .thumb.active {
+    opacity: 1;
+  }
+  
+  .zoom {
+    display: inline-block;
+  }

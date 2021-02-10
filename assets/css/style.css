@@ -1,0 +1,238 @@
+body{
+    background: #fff;
+    overflow-x: hidden;
+}
+.carousel-item {
+    height: 350px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-indicators {
+    bottom: -50px;
+}
+.light-grey{
+  background: #e3e3e3;
+}
+
+.extra-small-font{
+    font-size: 10px;
+}
+
+.small-font{
+    font-size: 12px;
+}
+
+.normal-font{
+    font-size: 14px;
+}
+
+.large-font{
+    font-size: 24px;
+}
+
+input[type="text"].search-box::-webkit-input-placeholder {
+    font-size: 12px;
+}
+nav{
+    background: #0f1111;
+    color: #fff;
+}
+a.nav-link {
+    color: #fff;
+}
+.navbar-brand{
+    color: #fff;
+}
+.login-btn{
+    background-color: #E0B589;
+    color: #000 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 5px !important;
+    border-radius: 2px !important;
+    margin: 2px;
+    border: 1px solid #000;
+}
+.register-btn{
+    background-color: #fff;
+    color: #000 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 5px !important;
+    border-radius: 2px !important;
+    margin: 2px;
+    border: 1px solid #000;
+}
+.add-to-cart-btn{
+    background-color: #E0B589;
+    color: #fff !important;
+    padding-top: 5px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 5px !important;
+    border: 1px solid #000 !important;
+    /* border-radius: 2px !important; */
+}
+.wishlist-btn{
+    background-color: #E0B589;
+    color: #fff !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    border: 1px solid #000;
+    /* border-radius: 2px !important; */
+}
+.carousel-control-prev{
+    margin: -60px;  
+}
+.carousel-control-next{
+    margin-right: -60px;
+}
+.price{
+    color: #B12704;
+    font-weight: bold;
+}
+.card-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer{
+    background: #0f1111;
+    color: #fff;
+}
+.btn-outline-danger{
+    background: #E0B589 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    border: 1px solid #000 !important;
+    color: #000 !important;
+    border-radius: 2px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+.btn-outline-secondary{
+    background: #0f1111 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    border: 1px solid #000 !important;
+    color: #000 !important;
+    border-radius: 2px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+.simple-btn{
+    background-color: #f8f9fa;
+    color: #000 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 5px !important;
+    border-radius: 2px !important;
+    margin: 2px;
+    border: 1px solid #000;
+}
+.link{
+    color: #007185;
+    text-decoration: none;
+    font-weight: 100;
+}
+.link:hover {
+    color: #f5961d !important;
+}
+.brown{
+    color: #B12704;
+}
+.stock{
+    color: #006400;
+    font-weight: bold;
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: #B12704;
+}
+
+/* For Variant colors start*/
+
+.custom-radios div {
+    display: inline-block;
+}
+.custom-radios input[type="radio"] {
+    display: none;
+}
+.custom-radios input[type="radio"] + label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.custom-radios input[type="radio"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    /* border-radius: 50%; */
+    border: 2px solid #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+}
+.custom-radios input[type="radio"] + label span img {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.custom-radios input[type="radio"]#color-1 + label span {
+    background-color: #2ecc71;
+}
+.custom-radios input[type="radio"]#color-2 + label span {
+    background-color: #3498db;
+}
+.custom-radios input[type="radio"]#color-3 + label span {
+    background-color: #f1c40f;
+}
+.custom-radios input[type="radio"]#color-4 + label span {
+    background-color: #e74c3c;
+}
+.custom-radios input[type="radio"]:checked + label span img {
+    opacity: 1;
+}
+
+/* For variant colors end */
+
+/* For variant unit start */
+
+.hungry .selection {
+    margin-bottom: 1em;
+  }
+  
+  .hungry .selection label {
+    display: inline-block;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 6px;
+    color: #000;
+    padding: 0.5em;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid #999999;
+  }
+  
+  .hungry .selection label:hover {
+    background-color: #5fc0dc;
+  }
+  
+  .hungry .selection input[type=radio] {
+    display: none;
+  }
+  
+  .hungry .selection input[type=radio]:checked ~ label {
+    background: #f5f6f7;
+    border: 2px solid #005e77;
+  }
+  
+/* For varian unit end */
+
