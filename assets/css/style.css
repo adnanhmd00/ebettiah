@@ -37,6 +37,12 @@ body{
 input[type="text"].search-box::-webkit-input-placeholder {
     font-size: 12px;
 }
+input[type="text"].placeholder::-webkit-input-placeholder {
+    font-size: 12px;
+}
+input[type="password"].placeholder::-webkit-input-placeholder {
+    font-size: 12px;
+}
 nav{
     background: #0f1111;
     color: #fff;
@@ -105,9 +111,8 @@ footer{
 .btn-outline-danger{
     background: #E0B589 !important;
     color: #fff !important;
-    border: 1px solid #fff !important;
-    border: 1px solid #000 !important;
     color: #000 !important;
+    border-color: #adb1b8 #a2a6ac #8d9096 !important;
     border-radius: 2px !important;
     padding-top: 2px !important;
     padding-bottom: 2px !important;
@@ -115,8 +120,7 @@ footer{
 .btn-outline-secondary{
     background: #0f1111 !important;
     color: #fff !important;
-    border: 1px solid #fff !important;
-    border: 1px solid #000 !important;
+    border-color: #adb1b8 #a2a6ac #8d9096 !important;
     color: #000 !important;
     border-radius: 2px !important;
     padding-top: 2px !important;
@@ -124,14 +128,18 @@ footer{
 }
 .simple-btn{
     background-color: #f8f9fa;
+    border-color: #adb1b8 #a2a6ac #8d9096 !important;
     color: #000 !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
-    padding-bottom: 5px !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
     border-radius: 2px !important;
-    margin: 2px;
-    border: 1px solid #000;
 }
+input[type="button"].simple-btn {
+    font-size: 12px;
+}
+
 .link{
     color: #007185;
     text-decoration: none;
@@ -147,7 +155,6 @@ footer{
     color: #006400;
     font-weight: bold;
 }
-
 .underline{
     text-decoration: underline;
     text-decoration-color: #B12704;
@@ -236,3 +243,10 @@ footer{
   
 /* For varian unit end */
 
+ /* For hr line text */
+ .hr-text{
+    width: 25%;
+    height: 20px;
+    border-bottom: 1px solid #E0B589;
+    text-align: center;
+ }
